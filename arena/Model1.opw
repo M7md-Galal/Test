@@ -1,0 +1,7 @@
+[RESOURCES]
+Service_representative
+[VARIABLES]
+Customer access.NumberOut
+leave_client.NumberOut
+customer service.NumberIn
+customer service.NumberOut

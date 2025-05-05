@@ -1,0 +1,78 @@
+
+----------------------------------------------------------------------
+Entity: 150
+A runtime error was detected at time 14.622224 at the following block:
+
+ *    1 2$              CREATE,1,MinutesToBaseTime(0.0),Customer:
+                            MinutesToBaseTime(EXPO(5)):
+                            NEXT(3$);
+
+Maximum of 150 entities exceeded.
+Possible causes:
+- A logic problem in your model is creating too many entities or not
+  disposing them. The run controller may be helpful in finding the problem.
+- You are in demo mode and have exceeded the entity limit. The commercial
+  version is required to run large models.
+- You have set an entity limit on the DISCRETE element that is too small.
+  Remove the limit or set it to a larger number.
+- You have exceeded the standard array s 
+pace for models. Use the Array Sizes
+  page in the Run/Setup dialog to increase the RSET space allocated and
+  recheck your model.
+----------------------------------------------------------------------
+
+
+SIMAN Run Controller.
+
+14.622224 Hours>
+                                      ARENA Simulation Results
+                                 Mohamed Galal - License:           
+
+                                  Summary for Replication 1 of 1
+
+Project: Unnamed Project                                             Run execution date : 5/ 4/2025
+Analyst: Mohamed Galal                                               Model revision date: 5/ 4/2025
+
+Replication ended at time      : 14.622224 Hours 
+Base Time Units: Hours
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Customer.VATime                                 --         --         --         --          0
+Customer.NVATime                                --         --         --         --          0
+Customer.WaitTime                               --         --         --         --          0
+Customer.TranTime                               --         --         --         --          0
+Customer.OtherTime                              --         --         --         --          0
+Customer.TotalTime                              --         --         --         --          0
+customer waiting_list.WaitingTime               --         --         --         --          0
+customer service.Queue.WaitingTime              --         --         --         --          0
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Customer.WIP                                75.809     (Insuf)    .00000     148.00     148.00    
+Service_representative.NumberBusy           .00000     (Insuf)    .00000     .00000     .00000    
+Service_representative.NumberScheduled      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Service_representative.Utilization          .00000     (Insuf)    .00000     .00000     .00000    
+customer waiting_list.NumberInQueue         .00000     (Insuf)    .00000     .00000     .00000    
+customer service.Queue.NumberInQueue        75.809     (Insuf)    .00000     149.00     149.00    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Customer.NumberIn                           148.00    
+Customer.NumberOut                          .00000    
+Service_representative.NumberSeized         .00000    
+Service_representative.ScheduledUtilizatio  .00000    
+System.NumberOut                            .00000    
+
+
+Simulation run time: 0.37 minutes.
+Simulation run completed with 1 error(s) and 0 warning(s).
